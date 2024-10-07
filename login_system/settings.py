@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-zbt=opkyr=da-4=8efjvsf*o)*@2g%kez$_*w8yv+#ydz6$!6c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.onrender.com']
+
 
 
 # Application definition
@@ -82,7 +83,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-DATABASES['default'] = dj_database_url.parse("postgresql://login_system_5an2_user:MiiAk4M8WzwVlVD6p9Ncbhzp0lo3xDDO@dpg-cs1aqq3tq21c73enocn0-a.oregon-postgres.render.com/login_system_5an2")
+
 # postgresql://login_system_5an2_user:MiiAk4M8WzwVlVD6p9Ncbhzp0lo3xDDO@dpg-cs1aqq3tq21c73enocn0-a.oregon-postgres.render.com/login_system_5an2
 
 # Password validation
